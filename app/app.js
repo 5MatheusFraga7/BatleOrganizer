@@ -1,31 +1,35 @@
 const express = require("express");
 const app = express();
 const { engine } = require("express-handlebars")
+
 const Sequelize = require('sequelize')
 const path = require('path')
 
+
+// ====== RUN SERVER =======
 
 app.listen(8081, function(){
     console.log("Funcionando em: http://localhost:8081");
 });
 
 
-// ====== SEQUELIZE =======
-const sequelize = new Sequelize('BattleOrganizer', 'root','12345678', {
-    host: 'localhost',
-    dialect: 'mysql'
-})
+// ====== DB CONNECT =======
 
-sequelize.authenticate().then(function(){
+(async () => {
+    
+    const database = require('../db');
+ 
+    try {
 
-    console.log("CONECTADO COM SUCESSO!");
+        await database.sync();
 
-}).catch(function(erro){
+    } catch (error) {
 
-    console.log("ERRO AO SE CONECTAR: " + erro);
+        console.log(error);
 
-})
+    }
 
+})();
 
 // ======= TEMPLATE ENGINE =======
 
