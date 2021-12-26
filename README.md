@@ -13,3 +13,7 @@ mysql -u root -p
   ~ CREATE DATABASE BattleOrganizer;
 
 npm install mysql2 --save
+
+# Start Server
+
+nodemon app/app.js
