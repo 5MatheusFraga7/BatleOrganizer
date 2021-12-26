@@ -4,6 +4,8 @@ npm install express  -- save
 
 npm install nodemon -g
 
+npm install --save express-handlebars
+
 npm install --save sequelize
 
 sudo apt install mysql-server
