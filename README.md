@@ -20,8 +20,12 @@ npm install mysql2 --save
 
 nodemon app/app.js
 
-# News
+=======
+# NEWS
+npm install bootstrap 5.1.3 --save
+npm install commonjs --save
+npm install jquery 3.6.0 --save
 
 npm i dotenv
-
 npx sequelize-cli db:migrate
+
