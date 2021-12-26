@@ -11,7 +11,7 @@ app.listen(8081, function(){
 
 
 // ====== SEQUELIZE =======
-const sequelize = new Sequelize('BattleOrganizer', 'root','12345678', {
+const sequelize = new Sequelize('BattleOrganizer', 'user','12345678', {
     host: 'localhost',
     dialect: 'mysql'
 })
