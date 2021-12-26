@@ -22,11 +22,11 @@ nodemon app/app.js
 
 # Front Tools 
 
-npm install bootstrap 5.1.3 --save
+npm install bootstrap --save
 
 npm install commonjs --save
 
-npm install jquery 3.6.0 --save
+npm install jquery --save
 
 
 # NEWS
