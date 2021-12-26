@@ -19,3 +19,8 @@ npm install mysql2 --save
 # Start Server
 
 nodemon app/app.js
+
+# NEWS
+npm install bootstrap 5.1.3 --save
+npm install commonjs --save
+npm install jquery 3.6.0 --save
