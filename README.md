@@ -34,4 +34,3 @@ npm install jquery --save
 npm i dotenv
 
 npx sequelize-cli db:migrate
-
